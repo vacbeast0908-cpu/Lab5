@@ -120,9 +120,9 @@
     .service-number { color: var(--blue); font-size: 14px; align-self: start; padding-top: 4px; }
     .service-copy h3 { font-size: 23px; margin-bottom: 9px; }
     .service-copy p { max-width: 580px; font-size: 16px; }
-    .service-price { display: flex; flex-direction: column; gap: 3px; }
+    .service-price { display: flex; flex-direction: column; gap: 5px; padding: 12px 16px; background: var(--ice); border-radius: 12px; }
     .service-price strong { font-size: 23px; font-weight: 650; color: var(--navy); }
-    .service-price span { font-size: 12px; line-height: 1.5; }
+    .service-price span { font-size: 14px; line-height: 1.4; }
     .round-link { min-width: 128px; height: 48px; padding: 10px 14px; gap: 12px; border: 1px solid #b4c8e1; border-radius: 12px; display: flex; align-items: center; justify-content: center; text-decoration: none; color: var(--blue-dark); font-size: 14px; font-weight: 650; transition: background .2s; }
     .round-link:hover { background: var(--blue); color: white; border-color: var(--blue); }
     .price-note { margin-top: 24px; max-width: 900px; font-size: 14px; }
@@ -284,6 +284,7 @@
       .section-heading > p { max-width: 285px; }
       .service { grid-template-columns: 25px minmax(0,1fr) 130px 128px; gap: 18px; }
       .service-copy h3 { font-size: 21px; }
+      .service-price { padding: 10px 8px; }
       .service-price strong { font-size: 21px; }
       .doctors-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 34px 24px; }
       .doctor-role { min-height: 0; }
@@ -354,8 +355,7 @@
       .service { grid-template-columns: 22px minmax(0,1fr) 45px; gap: 12px; padding-block: 24px; }
       .service-copy { grid-column: 2 / 4; }
       .service-copy h3 { font-size: 21px; }
-      .service-price { grid-column: 2; }
-      .service-price span { font-size: 12px; }
+      .service-price { grid-column: 2 / -1; padding: 12px 14px; }
       .round-link { grid-column: 2 / 4; width: fit-content; height: 44px; }
       .service-number { grid-row: 1; }
       .price-note { font-size: 13px; }
@@ -467,7 +467,7 @@
     </section>
     <section class="section services-section" id="services" aria-labelledby="services-title">
       <div class="container">
-        <div class="section-heading"><div><span class="eyebrow">Услуги и ориентиры по стоимости</span><h2 id="services-title">От заботы каждый день<br>до больших перемен.</h2></div><p>Не знаете, с чего начать? Выберите диагностику — на первой встрече разберёмся вместе.</p></div>
+        <div class="section-heading"><div><h2 id="services-title">Услуги и цены</h2></div><p>Не знаете, с чего начать? Выберите диагностику — на первой встрече разберёмся вместе.</p></div>
         <div class="services-list">
           <article class="service">
             <span class="service-number">01</span>
